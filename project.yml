@@ -12,3 +12,5 @@ targets:
     postBuildScripts:
       - script: swiftlint
         name: SwiftLint
+    settings:
+      OTHER_SWIFT_FLAGS: -Xfrontend -warn-long-expression-type-checking=100

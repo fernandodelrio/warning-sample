@@ -1,9 +1,6 @@
-.PHONY: setup clean arch project log mocks
+.PHONY: setup project
 setup:
 	brew bundle
-clean:
-	rm -rf .build
-	rm -rf WarningSample.xcodeproj
+	bundle install
 project:
-	rm -rf WarningSample.xcodeproj
 	xcodegen generate
