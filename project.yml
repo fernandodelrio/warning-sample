@@ -1,0 +1,14 @@
+name: WarningSample
+options:
+  bundleIdPrefix: br.com.fernandodelrio.WarningSample
+  deploymentTarget: 15.0
+targets:
+  App:
+    type: application
+    platform: iOS
+    sources: [App]
+    info:
+      path: App/Info.plist
+    postBuildScripts:
+      - script: swiftlint
+        name: SwiftLint
